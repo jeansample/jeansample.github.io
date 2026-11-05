@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不良人研究所导航-不良人研究所_不良人资料_不良人角色_不良人剧情</title>
+<meta name="description" content="不良人研究所导航整理不良人系列作品的研究资料、角色档案、剧情脉络与讨论入口，帮助访问者快速找到想了解的人物、势力关系与作品背景，并按使用方式说明如何筛选信息、辨别内容来源与安排浏览顺序。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1a17'/%3E%3Cpath d='M14 46 L26 18 L32 34 L38 18 L50 46' fill='none' stroke='%23d8b25a' stroke-width='5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b1a17;
+  --ink-soft:#4b463d;
+  --paper:#f4efe4;
+  --paper-deep:#e9e0cd;
+  --gold:#a8802a;
+  --gold-bright:#d8b25a;
+  --red:#8c3b2c;
+  --line:#cfc3a8;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,serif;
+  line-height:1.85;
+  font-size:17px;
+}
+a{color:var(--red);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.topbar{
+  background:var(--ink);
+  color:var(--paper-deep);
+  font-size:13px;
+  letter-spacing:.08em;
+}
+.topbar .wrap{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:8px 0;
+  flex-wrap:wrap;
+}
+.wrap{
+  width:min(1120px,92%);
+  margin:0 auto;
+}
+.masthead{
+  border-bottom:3px double var(--line);
+  background:
+    radial-gradient(circle at 88% 20%,rgba(216,178,90,.18),transparent 55%),
+    var(--paper);
+}
+.masthead .wrap{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:24px;
+  padding:26px 0 18px;
+  flex-wrap:wrap;
+}
+.brandmark{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.brandmark .seal{
+  width:52px;height:52px;
+  border:2px solid var(--gold);
+  display:grid;place-items:center;
+  color:var(--gold);
+  font-weight:700;
+  font-size:22px;
+  letter-spacing:-1px;
+  transform:rotate(-2deg);
+}
+.brandmark h1{
+  margin:0;
+  font-size:clamp(22px,3vw,30px);
+  letter-spacing:.04em;
+  font-weight:700;
+}
+.brandmark .sub{
+  display:block;
+  font-size:13px;
+  color:var(--ink-soft);
+  letter-spacing:.18em;
+  font-weight:400;
+  margin-top:4px;
+}
+.masthead .meta{
+  font-size:13px;
+  color:var(--ink-soft);
+  text-align:right;
+  line-height:1.7;
+}
+nav.jump{
+  background:var(--paper-deep);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+nav.jump ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px 22px;
+  list-style:none;
+  margin:0;
+  padding:11px 0;
+  font-size:14px;
+}
+nav.jump a{color:var(--ink-soft);letter-spacing:.05em;}
+nav.jump a:hover{color:var(--red);text-decoration:none;border-bottom:1px solid var(--red);}
+main{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 278px;
+  gap:44px;
+  padding:40px 0 56px;
+}
+.lead{
+  border-left:5px solid var(--gold);
+  padding:6px 0 6px 22px;
+  margin-bottom:34px;
+}
+.lead .tagline{
+  font-size:19px;
+  color:var(--ink);
+  margin:0 0 14px;
+  font-weight:700;
+}
+.lead p{margin:0 0 12px;color:var(--ink-soft);}
+.lead .hint{
+  font-size:14px;
+  color:var(--ink-soft);
+  background:var(--paper-deep);
+  border:1px dashed var(--line);
+  padding:10px 14px;
+  margin-top:16px;
+}
+section.block{
+  margin-bottom:46px;
+  scroll-margin-top:64px;
+}
+section.block > h2{
+  font-size:21px;
+  margin:0 0 6px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--line);
+  letter-spacing:.03em;
+}
+section.block > h2 .num{
+  color:var(--gold);
+  font-size:14px;
+  margin-right:10px;
+  letter-spacing:.1em;
+}
+section.block .deck{
+  color:var(--ink-soft);
+  font-size:15px;
+  margin:12px 0 16px;
+}
+p{margin:0 0 14px;}
+ul.points{
+  margin:0 0 18px;
+  padding-left:0;
+  list-style:none;
+}
+ul.points li{
+  position:relative;
+  padding-left:22px;
+  margin-bottom:8px;
+  color:var(--ink-soft);
+}
+ul.points li::before{
+  content:"◆";
+  position:absolute;
+  left:0;
+  top:0;
+  color:var(--gold);
+  font-size:11px;
+}
+.file-list{
+  border-top:1px solid var(--line);
+}
+.file-list article{
+  display:grid;
+  grid-template-columns:104px minmax(0,1fr);
+  gap:18px;
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+}
+.file-list .label{
+  font-size:13px;
+  color:var(--gold);
+  letter-spacing:.1em;
+  padding-top:3px;
+}
+.file-list h3{
+  margin:0 0 6px;
+  font-size:17px;
+}
+.file-list p{
+  margin:0 0 8px;
+  font-size:15px;
+  color:var(--ink-soft);
+}
+.file-list .tags{
+  font-size:12px;
+  color:var(--ink-soft);
+  letter-spacing:.06em;
+}
+.file-list .tags span{
+  border:1px solid var(--line);
+  padding:1px 8px;
+  margin-right:6px;
+  display:inline-block;
+  margin-bottom:4px;
+  background:#fbf8f1;
+}
+.notes{
+  background:#fbf8f1;
+  border:1px solid var(--line);
+  padding:20px 22px;
+}
+.notes h3{
+  margin:0 0 10px;
+  font-size:16px;
+  color:var(--red);
+}
+.steps{
+  counter-reset:st;
+  list-style:none;
+  margin:0 0 18px;
+  padding:0;
+}
+.steps li{
+  counter-increment:st;
+  position:relative;
+  padding-left:46px;
+  margin-bottom:16px;
+  color:var(--ink-soft);
+}
+.steps li::before{
+  content:counter(st,decimal-leading-zero);
+  position:absolute;
+  left:0;top:2px;
+  width:32px;height:32px;
+  display:grid;place-items:center;
+  background:var(--ink);
+  color:var(--gold-bright);
+  font-size:13px;
+  font-family:Georgia,serif;
+}
+.steps li b{color:var(--ink);display:block;margin-bottom:2px;}
+table.cmp{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+  margin:6px 0 18px;
+}
+table.cmp th,table.cmp td{
+  border:1px solid var(--line);
+  padding:10px 12px;
+  text-align:left;
+  vertical-align:top;
+}
+table.cmp th{
+  background:var(--paper-deep);
+  font-weight:700;
+  white-space:nowrap;
+}
+table.cmp td{color:var(--ink-soft);}
+aside.rail{
+  font-size:14px;
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+}
+aside.rail .box{
+  border:1px solid var(--line);
+  background:#fbf8f1;
+  padding:18px;
+}
+aside.rail h2{
+  font-size:15px;
+  margin:0 0 12px;
+  letter-spacing:.12em;
+  color:var(--ink);
+  padding-bottom:8px;
+  border-bottom:1px solid var(--line);
+}
+aside.rail ol{
+  margin:0;
+  padding-left:20px;
+  color:var(--ink-soft);
+}
+aside.rail ol li{margin-bottom:9px;}
+aside.rail p{color:var(--ink-soft);margin:0 0 10px;}
+aside.rail dl{margin:0;}
+aside.rail dt{
+  color:var(--ink);
+  font-weight:700;
+  margin-top:10px;
+}
+aside.rail dd{margin:0 0 6px;color:var(--ink-soft);}
+.qa{
+  border-top:1px solid var(--line);
+}
+.qa details{
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+}
+.qa summary{
+  cursor:pointer;
+  font-weight:700;
+  font-size:16px;
+  list-style:none;
+  position:relative;
+  padding-left:24px;
+}
+.qa summary::-webkit-details-marker{display:none;}
+.qa summary::before{
+  content:"？";
+  position:absolute;
+  left:0;top:0;
+  color:var(--gold);
+  font-weight:700;
+}
+.qa details[open] summary{color:var(--red);}
+.qa .ans{
+  margin-top:10px;
+  padding-left:24px;
+  color:var(--ink-soft);
+  font-size:15px;
+}
+.action{
+  border:2px solid var(--ink);
+  padding:24px 26px;
+  background:
+    linear-gradient(135deg,rgba(216,178,90,.16),transparent 60%),
+    #fbf8f1;
+}
+.action h2{
+  margin:0 0 10px;
+  font-size:20px;
+  border:none;
+  padding:0;
+}
+.action p{color:var(--ink-soft);margin:0 0 8px;}
+footer{
+  border-top:3px double var(--line);
+  background:var(--ink);
+  color:#c9c0ad;
+  font-size:13.5px;
+  padding:30px 0 36px;
+}
+footer .wrap{
+  display:grid;
+  grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+  gap:30px;
+}
+footer h2{
+  font-size:14px;
+  color:var(--gold-bright);
+  letter-spacing:.14em;
+  margin:0 0 10px;
+}
+footer p{margin:0 0 10px;line-height:1.8;}
+footer ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  columns:2;
+  font-size:13px;
+}
+footer ul li{margin-bottom:6px;}
+footer a{color:#c9c0ad;}
+footer .copy{
+  grid-column:1/-1;
+  border-top:1px solid #3a3730;
+  padding-top:14px;
+  font-size:12.5px;
+  color:#8d8677;
+}
+@media (max-width:900px){
+  main{grid-template-columns:1fr;gap:34px;}
+  aside.rail{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  footer .wrap{grid-template-columns:1fr;}
+}
+@media (max-width:620px){
+  body{font-size:16px;}
+  .masthead .wrap{padding:20px 0 14px;}
+  .masthead .meta{text-align:left;}
+  nav.jump ul{gap:2px 14px;font-size:13px;padding:9px 0;}
+  main{padding:26px 0 40px;}
+  .lead{padding-left:16px;}
+  .lead .tagline{font-size:17px;}
+  .file-list article{grid-template-columns:1fr;gap:6px;padding:14px 0;}
+  .file-list .label{padding-top:0;}
+  aside.rail{grid-template-columns:1fr;}
+  table.cmp{font-size:13px;}
+  table.cmp th,table.cmp td{padding:8px;}
+  .action{padding:18px;}
+  footer ul{columns:1;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>资料索引 · 人物档案 · 势力脉络</span>
+    <span>内容以整理与检索为主，非官方发布渠道</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brandmark">
+      <div class="seal" aria-hidden="true">不良</div>
+      <h1>不良人研究所导航
+        <span class="sub">人物 · 势力 · 剧情 · 讨论</span>
+      </h1>
+    </div>
+    <div class="meta">
+      <div>一个面向考据与检索的资料型索引</div>
+      <div>按人物、势力、剧情、讨论四条线组织内容</div>
+    </div>
+  </div>
+</header>
+
+<nav class="jump" aria-label="页面栏目">
+  <div class="wrap">
+    <ul>
+      <li><a href="#about">导航定位</a></li>
+      <li><a href="#people">人物档案</a></li>
+      <li><a href="#forces">势力关系</a></li>
+      <li><a href="#story">剧情脉络</a></li>
+      <li><a href="#method">使用方法</a></li>
+      <li><a href="#compare">内容差异</a></li>
+      <li><a href="#safety">甄别与安全</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="content">
+
+    <section class="lead" aria-labelledby="lead-title">
+      <p class="tagline" id="lead-title">想查一个人物、一条势力线或一段剧情，先从这里确定入口</p>
+      <p>不良人研究所导航不是作品播放页，也不是官方信息发布页，而是一个面向作品研究者的资料索引页。它把散落在不同讨论区的角色信息、势力归属、剧情节点和考据线索按顺序整理出来，让访问者先明确自己要找什么，再进入对应栏目。</p>
+      <p>如果你只是想知道某个角色属于哪一方、某个组织在故事中承担什么作用，可以直接从人物档案或势力关系开始；如果你在追剧情或整理时间线，建议先看剧情脉络，再回到人物条目补充细节。使用不良人研究所导航的关键，是先定问题，再选栏目，避免在一堆零散说法里来回跳。</p>
+      <div class="hint">提示：本站整理的是资料线索与检索方法，具体设定以作品正片与官方渠道为准。遇到互相矛盾的说法时，请回到正片核对。</div>
+    </section>
+
+    <section class="block" id="about" aria-labelledby="about-h">
+      <h2 id="about-h"><span class="num">一</span>不良人研究所导航是什么，适合谁用</h2>
+      <p>不良人研究所导航的核心用途是“把问题落到具体栏目”。作品涉及的角色数量多、势力交错、时间线跨度大，如果只靠记忆搜索，很容易被旧版本说法或二次解读带偏。这个导航页把常见查询拆成四类：人物是谁、属于哪一方、在哪段剧情出现、相关讨论在哪里展开。</p>
+      <p>它适合三类访问者。第一类是刚接触作品、想先建立人物和势力框架的新观众；第二类是回看剧情、需要核对细节的老观众；第三类是整理考据材料、希望知道哪些内容属于正片设定、哪些属于讨论推测的整理者。三类人需要的入口不同，因此栏目顺序按“从框架到细节”排列。</p>
+      <p>需要说明的是，不良人研究所导航提供的是检索路径和整理口径，不替代作品本身。任何关于角色动机、阵营变化的判断，都应回到具体剧情中确认。导航页的价值在于减少重复查找的时间，而不是给出唯一结论。</p>
+      <ul class="points">
+        <li>想建立整体印象：先看势力关系，再看人物档案</li>
+        <li>想核对某个细节：直接用人物名或剧情节点定位条目</li>
+        <li>想了解讨论现状：进入讨论入口，注意区分设定与推测</li>
+        <li>想整理材料：按“正片信息、讨论观点、待确认”三层分开记录</li>
+      </ul>
+    </section>
+
+    <section class="block" id="people" aria-labelledby="people-h">
+      <h2 id="people-h"><span class="num">二</span>人物档案：按什么维度整理角色</h2>
+      <p class="deck">人物是不良人研究所导航里查询量最大的一类内容。整理人物时，建议固定几个维度，避免不同条目写法混乱。</p>
+      <p>第一层是身份信息，包括所属势力、在组织中的位置、与其他角色的关系。第二层是出场范围，说明该角色主要活跃在哪一阶段，便于回看时定位。第三层是行为线索，只记录能在正片中对应到的情节，不把观众推测写进档案。第四层是待确认项，把存在争议或说法不一的内容单独列出。</p>
+      <p>按这四个维度整理，人物档案就能同时服务“快速了解”和“深入核对”两种需求。对于戏份较少的角色，可以只保留身份与出场范围，不必强行补全动机分析，否则容易把猜测当成设定。</p>
+      <div class="file-list">
+        <article>
+          <div class="label">档案 A 类</div>
+          <div>
+            <h3>主要角色条目</h3>
+            <p>适合戏份贯穿多段剧情的角色。条目内按身份、关系、关键情节、说法差异四块排列，方便逐项核对。</p>
+            <div class="tags"><span>身份</span><span>关系网</span><span>关键情节</span></div>
+          </div>
+        </article>
+        <article>
+          <div class="label">档案 B 类</div>
+          <div>
+            <h3>阶段性出场角色</h3>
+            <p>只在某一段剧情中承担推进作用的角色，条目以出场范围和所起作用为主，不展开长篇评价。</p>
+            <div class="tags"><span>出场范围</span><span>剧情作用</span></div>
+          </div>
+        </article>
+        <article>
+          <div class="label">档案 C 类</div>
+          <div>
+            <h3>组织与群体条目</h3>
+            <p>当查询对象是一个群体而非单个人物时，条目重点写清组织目标、内部层级和对外关系，避免与个人条目混写。</p>
+            <div class="tags"><span>组织目标</span><span>内部层级</span><span>对外关系</span></div>
+          </div>
+        </article>
+        <article>
+          <div class="label">档案 D 类</div>
+          <div>
+            <h3>待核对条目</h3>
+            <p>针对说法不统一的内容，只列出分歧点和可核对位置，不给出结论，提醒访问者回到正片确认。</p>
+            <div class="tags"><span>分歧点</span><span>核对位置</span></div>
+          </div>
+        </article>
+      </div>
+      <ul class="points">
+        <li>同一个人物只建一个主条目，其他说法以附注形式补充</li>
+        <li>人物关系用“谁对谁、什么关系、在哪段剧情体现”三句话写清</li>
+        <li>不把观众评价写进档案主体，评价类内容放入讨论栏目</li>
+        <li>不确定的信息标注“待核对”，不要用肯定语气表述</li>
+      </ul>
+    </section>
+
+    <section class="block" id="forces" aria-labelledby="forces-h">
+      <h2 id="forces-h"><span class="num">三</span>势力关系：看懂阵营交错的三个办法</h2>
+      <p>势力关系是不良人研究所导航中最容易让人混乱的部分。角色立场会随剧情推进而变化，组织结构也存在层级差异，因此不能用一个静态名单概括全部。整理时建议同时保留“当前归属”和“历史归属”两条记录，并标注变化发生的大致剧情位置。</p>
+      <p>第一个办法是先画主干，把主要势力按对立、合作、中立三类分开，再补细节。第二个办法是按人物反推，从主要角色的行动看其所属势力在不同阶段的态度。第三个办法是按事件梳理，找出改变阵营关系的关键节点，围绕节点整理前后变化。</p>
+      <p>三种办法各有适用场景。刚接触作品时用主干法建立框架，回看细节时用人物反推法，整理时间线时用事件法。把三种方法混用而不加区分，往往会导致同一段剧情出现互相矛盾的描述。不良人研究所导航在处理这类内容时，会明确标注采用的是哪一种整理口径。</p>
+      <ul class="points">
+        <li>主干法：先分对立、合作、中立，再补充次级组织</li>
+        <li>反推法：从主要角色的行为判断其所属势力的态度变化</li>
+        <li>事件法：围绕改变关系的关键剧情节点整理前后差异</li>
+        <li>记录时标明剧情阶段，避免不同时期的说法被混在一起</li>
+        <li>对没有明确交代的关系，写“未说明”比强行推断更可靠</li>
+      </ul>
+    </section>
+
+    <section class="block" id="story" aria-labelledby="story-h">
+      <h2 id="story-h"><span class="num">四</span>剧情脉络：按阶段而不是按集数整理</h2>
+      <p>剧情类查询通常有两类需求：一类是想快速回忆某段发生了什么，另一类是想理解前后因果。按集数逐条罗列不适合前者，也不利于后者。更实用的做法是按剧情阶段划分，每个阶段写清起始背景、主要冲突、结果和遗留线索。</p>
+      <p>阶段划分不必追求绝对精细，关键是每个阶段有明确的边界和主题。例如某一段以势力整合为主线，另一段以人物立场转变为主线，把主线写清楚，读者就能判断自己需要回看哪一部分。不良人研究所导航在剧情栏目中保留“阶段—冲突—结果—遗留问题”的固定结构，方便对照。</p>
+      <p>整理剧情时还要注意区分“发生了什么”和“为什么发生”。前者是事实层，后者往往涉及角色动机，属于解读层。两层混写会让条目变得主观，读者也难以判断哪些内容可以采信。</p>
+      <ul class="points">
+        <li>阶段标题写主线，不写空泛的“剧情回顾”</li>
+        <li>每段结尾单列遗留问题，方便接着往下看</li>
+        <li>事实与解读分开写，解读部分注明属于讨论观点</li>
+        <li>涉及多线并行的剧情，先写主线再补支线</li>
+      </ul>
+    </section>
+
+    <section class="block" id="method" aria-labelledby="method-h">
+      <h2 id="method-h"><span class="num">五</span>使用方法：四步找到你要的资料</h2>
+      <p class="deck">不良人研究所导航的栏目并不复杂，但按顺序使用会比随意点击更省时间。</p>
+      <ol class="steps">
+        <li><b>第一步，明确问题类型</b>先判断自己查的是人物、势力、剧情还是讨论。问题类型决定入口，不同类型混着查，容易在无关栏目里绕圈。</li>
+        <li><b>第二步，用关键词定位</b>在人物档案或剧情脉络中，用角色名、组织名、阶段特征作为检索词，比浏览全部条目更快。</li>
+        <li><b>第三步，核对信息来源</b>看到条目后，先确认它写的是正片内容还是讨论观点，再决定是否采信。</li>
+        <li><b>第四步，记录待确认项</b>把仍有疑问的部分记下来，带着具体问题回看剧情，比反复浏览二手整理更有效。</li>
+      </ol>
+      <p>四步之外还有一个习惯值得保留：每次只解决一个问题。作品信息量大，同时追多条线索容易混淆。完成一个条目后再进入下一个，整理效率反而更高。不良人研究所导航的栏目顺序也是按这个思路设计的。</p>
+      <ul class="points">
+        <li>先分类问题，再选栏目，最后才看具体条目</li>
+        <li>检索词优先用角色名和组织名，少用宽泛描述</li>
+        <li>对存在争议的内容，保留原文出处或大致位置</li>
+        <li>整理笔记时给每条内容标注“已核对”或“待核对”</li>
+      </ul>
+    </section>
+
+    <section class="block" id="compare" aria-labelledby="compare-h">
+      <h2 id="compare-h"><span class="num">六</span>内容差异：不同类型资料该怎么看</h2>
+      <p>围绕同一部作品，常见资料大致可分为正片内容、官方渠道发布的信息、观众讨论整理、二次创作内容四类。四类资料的可靠程度和用途不同，混在一起看就容易产生误解。不良人研究所导航在处理内容差异时，会优先标明资料类型。</p>
+      <table class="cmp">
+        <thead>
+          <tr><th>资料类型</th><th>主要用途</th><th>需要注意</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>正片内容</td><td>核对设定、台词、人物行为</td><td>以实际播出的内容为准，不以转述替代</td></tr>
+          <tr><td>官方渠道信息</td><td>确认制作与发布层面的安排</td><td>注意发布时间，避免把旧消息当新消息</td></tr>
+          <tr><td>讨论整理</td><td>了解不同解读和争议点</td><td>属于观点，不能直接当作设定使用</td></tr>
+          <tr><td>二次创作</td><td>参考同人表达与延伸想象</td><td>与正片设定分开看待，不要混入档案</td></tr>
+        </tbody>
+      </table>
+      <p>把四类资料分开之后，人物档案和剧情条目会清晰很多。读者看到一条信息时，能立刻判断它属于哪一层，从而决定是直接采用还是继续核对。这也是不良人研究所导航在整理内容时坚持的基本原则。</p>
+    </section>
+
+    <section class="block" id="safety" aria-labelledby="safety-h">
+      <h2 id="safety-h"><span class="num">七</span>甄别与安全：浏览资料时要注意什么</h2>
+      <p>资料类页面的常见问题是信息过时和来源不明。遇到声称能提供“内部设定”“完整未公开内容”的说法时，应保持谨慎，作品设定以正片和官方渠道为准。对于要求下载不明文件、填写账号信息或跳转到陌生页面的入口，不建议操作。</p>
+      <p>另一个需要注意的点是版权与转载。引用他人整理的图表、长段文字或翻译内容时，应注明来源并遵守相应规则。不良人研究所导航本身以整理检索路径为主，不提供作品文件，也不代替任何官方渠道。</p>
+      <div class="notes">
+        <h3>浏览时的三条基本判断</h3>
+        <p>一看出处是否可追溯，二看内容是否区分事实与观点，三看是否有明显的夸大表述。三条中若有一条不满足，就把它当作参考而非依据。</p>
+      </div>
+      <ul class="points">
+        <li>不轻信“独家内部资料”类说法，回到正片核对</li>
+        <li>不随意下载来路不明的文件或安装包</li>
+        <li>引用他人整理内容时注明来源，尊重原作者劳动</li>
+        <li>遇到要求提供账号密码的页面，立即停止操作</li>
+      </ul>
+    </section>
+
+    <section class="block qa" id="faq" aria-labelledby="faq-h">
+      <h2 id="faq-h"><span class="num">八</span>常见问题</h2>
+      <details open>
+        <summary>不良人研究所导航是官方页面吗？</summary>
+        <div class="ans">不是。它是由资料整理者维护的索引型页面，用于汇总人物、势力、剧情和讨论入口，不代表作品官方立场，也不发布官方消息。涉及设定和发布安排的内容，请以作品正片与官方渠道为准。</div>
+      </details>
+      <details>
+        <summary>查询一个人物应该先看哪个栏目？</summary>
+        <div class="ans">先看人物档案中的身份与关系部分，再看出场范围，最后按需查看关键情节。如果该人物与势力变化关系密切，可以接着看势力关系栏目，了解其立场在剧情中的位置。</div>
+      </details>
+      <details>
+        <summary>不同整理版本说法不一致怎么办？</summary>
+        <div class="ans">先把分歧点记录下来，标注各自对应的剧情位置，再回到正片核对。无法确认的部分应保留“待核对”状态，不建议直接采用某一方的结论。这也是不良人研究所导航设置待核对条目的原因。</div>
+      </details>
+      <details>
+        <summary>剧情脉络为什么不按集数排列？</summary>
+        <div class="ans">按集数排列更适合逐集回顾，不适合理解因果。按阶段整理能把背景、冲突、结果和遗留问题放在一起，读者更容易判断自己需要回看哪一段。如果确实需要精确到集，可在阶段条目内补充大致位置。</div>
+      </details>
+      <details>
+        <summary>讨论区的内容可以直接当作设定吗？</summary>
+        <div class="ans">不建议。讨论区内容多为观众解读，可能包含推测、假设或个人偏好。可以作为理解作品的参考，但涉及人物动机、阵营归属等关键信息时，仍应以正片呈现为准。</div>
+      </details>
+      <details>
+        <summary>这个导航页会提供作品观看或下载入口吗？</summary>
+        <div class="ans">不会。页面定位是资料索引与检索说明，不提供作品文件、播放地址或下载链接。访问者应根据自身所在地区的正规渠道获取作品内容，并遵守相关版权规定。</div>
+      </details>
+      <details>
+        <summary>怎样整理自己的考据笔记更有效？</summary>
+        <div class="ans">建议按“正片信息、讨论观点、待确认”三层分开记录，每条注明大致出处。同一人物或事件只建一个主条目，其他说法以附注补充。定期回头核对待确认项，能明显减少后期整理时的混乱。</div>
+      </details>
+    </section>
+
+    <section class="action" aria-labelledby="cta-h">
+      <h2 id="cta-h">从一个具体问题开始使用这份导航</h2>
+      <p>与其漫无目的地翻页，不如先写下你想确认的那一个问题：是某个角色的归属，还是某段剧情的因果。带着问题进入对应栏目，不良人研究所导航的整理结构才能真正发挥作用。</p>
+      <p>如果你正在整理材料，建议同时保留原文位置和核对状态，这样后续复查时能快速回到源头，也便于与他人交流时说明依据。</p>
+    </section>
+
+  </div>
+
+  <aside class="rail" aria-label="侧边辅助信息">
+    <div class="box">
+      <h2>快速入口</h2>
+      <ol>
+        <li><a href="#people">人物档案分类说明</a></li>
+        <li><a href="#forces">势力关系三种整理法</a></li>
+        <li><a href="#story">剧情阶段划分方式</a></li>
+        <li><a href="#method">四步检索流程</a></li>
+        <li><a href="#safety">资料甄别要点</a></li>
+      </ol>
+    </div>
+    <div class="box">
+      <h2>栏目速览</h2>
+      <dl>
+        <dt>人物档案</dt>
+        <dd>身份、关系、出场范围、关键情节</dd>
+        <dt>势力关系</dt>
+        <dd>阵营主干、人物反推、事件节点</dd>
+        <dt>剧情脉络</dt>
+        <dd>阶段、冲突、结果、遗留问题</dd>
+        <dt>讨论入口</dt>
+        <dd>区分设定与观点，保留出处</dd>
+      </dl>
+    </div>
+    <div class="box">
+      <h2>整理口径</h2>
+      <p>本页内容以检索路径和整理方法为主，不发布作品文件，不冒充官方渠道。</p>
+      <p>遇到说法不一致时，优先回到正片核对，并记录核对位置。</p>
+    </div>
+  </aside>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>关于本页</h2>
+      <p>不良人研究所导航是一个面向作品研究者的资料索引页，围绕人物档案、势力关系、剧情脉络和讨论入口组织内容，帮助访问者按问题类型快速定位资料，并区分正片信息与讨论观点。</p>
+      <p>页面不提供作品播放、下载或任何形式的文件分发，也不代表官方立场。具体设定与发布安排请以作品正片和官方渠道为准。</p>
+    </div>
+    <div>
+      <h2>栏目索引</h2>
+      <ul>
+        <li><a href="#about">导航定位</a></li>
+        <li><a href="#people">人物档案</a></li>
+        <li><a href="#forces">势力关系</a></li>
+        <li><a href="#story">剧情脉络</a></li>
+        <li><a href="#method">使用方法</a></li>
+        <li><a href="#compare">内容差异</a></li>
+        <li><a href="#safety">甄别与安全</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </div>
+    <div class="copy">资料整理与检索说明 · 引用他人内容请注明来源 · 理性讨论，尊重版权</div>
+  </div>
+</footer>
+
+</body>
+          </html>
